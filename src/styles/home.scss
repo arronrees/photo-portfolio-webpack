@@ -1,0 +1,138 @@
+.home-body {
+  background-image: url('../assets/img/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+  color: white;
+  text-transform: uppercase;
+
+  h1 {
+    font-size: 10rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.home-main {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 50vh;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.chevron {
+  width: 3rem;
+  transition: all 1s ease;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-nav-menu {
+  display: none;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.home-nav-item {
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.home-main:hover {
+  height: 50vh;
+  margin-top: 10vh;
+  flex-direction: column;
+}
+
+.home-main:hover .chevron {
+  transform: rotate(180deg) translateX(50%);
+}
+
+.home-main:hover .home-nav-menu {
+  display: flex;
+}
+
+.home-main:hover .home-nav-item {
+  opacity: 1;
+}
+
+.home-nav-menu:hover .home-nav-item {
+  opacity: 0.5;
+}
+
+.home-nav-menu .home-nav-item:hover {
+  transform: rotate(0deg);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1024px) {
+  .home-main {
+    height: 50vh;
+    margin: 0;
+    flex-direction: row;
+  }
+  .chevron {
+    display: none;
+  }
+  .home-main:hover {
+    height: 50vh;
+    margin: 0;
+    flex-direction: row;
+  }
+  .home-nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+  }
+  .home-nav-item {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .home-nav-menu {
+    font-size: 2.4rem;
+  }
+
+  .home-header h1 {
+    font-size: 8rem;
+  }
+  .home-header h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .home-header h1 {
+    font-size: 7rem;
+  }
+  .home-header h2 {
+    font-size: 2rem;
+  }
+  .home-nav-menu {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+body {
+  font-family: 'Belleza', sans-serif;
+  overflow: hidden;
+  letter-spacing: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.nav-menu-open {
+  overflow-y: hidden;
+}
