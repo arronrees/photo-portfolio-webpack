@@ -13,7 +13,7 @@ body {
   gap: 2rem;
   grid-template-columns: repeat(10, 1fr);
   grid-auto-rows: 50px;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 .card {
@@ -42,9 +42,9 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 4rem;
 }
 
 .to-top-arrow {
   width: 1.5rem;
-  padding-bottom: 2rem;
 }

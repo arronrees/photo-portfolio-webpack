@@ -6,5 +6,7 @@ import '../styles/workCards.scss';
 import '../styles/work.scss';
 
 import { navSlide } from './other/navSlide';
+import { cardEntrance } from './other/cardEntrance';
 
 navSlide();
+cardEntrance();
