@@ -10,3 +10,5 @@ import { cardEntrance } from './other/cardEntrance';
 
 navSlide();
 cardEntrance();
+
+document.addEventListener('scroll', (e) => {});

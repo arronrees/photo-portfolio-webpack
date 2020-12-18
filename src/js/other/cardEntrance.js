@@ -4,28 +4,25 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export function cardEntrance() {
-  const cards1 = document.querySelectorAll('.card1');
-  const cards2 = document.querySelectorAll('.card2');
+  const cards = document.querySelectorAll('.card');
+  const imgCards = document.querySelectorAll('.img-card');
 
-  cards1.forEach((card) => {
+  cards.forEach((card) => {
     gsap.from(card, {
-      yPercent: 15,
+      yPercent: -25,
       scale: 1.1,
-      duration: 0.5,
       scrollTrigger: {
         trigger: card,
-        start: 'top 80%',
+        start: 'top bottom',
         scrub: true,
         toggleActions: 'play none none reverse',
       },
     });
   });
 
-  cards2.forEach((card) => {
+  imgCards.forEach((card) => {
     gsap.from(card, {
-      yPercent: 25,
-      scale: 0.9,
-      duration: 0.5,
+      scale: 1.2,
       scrollTrigger: {
         trigger: card,
         start: 'top bottom',
