@@ -5,15 +5,14 @@ body {
 .photo-grid {
   width: 90vw;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   position: relative;
 
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(10, 1fr);
-  grid-auto-rows: 50px;
-  padding: 8rem 0;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 500px;
+
+  padding: 4rem 0;
 }
 
 .card {
@@ -38,4 +37,17 @@ footer {
 
 .to-top-arrow {
   width: 1.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .photo-grid {
+    width: 80vw;
+  }
 }

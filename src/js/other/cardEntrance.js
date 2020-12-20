@@ -9,24 +9,14 @@ export function cardEntrance() {
 
   cards.forEach((card) => {
     gsap.from(card, {
-      yPercent: -25,
+      yPercent: 20,
+      opacity: 0,
       scale: 1.1,
+      duration: 1.5,
       scrollTrigger: {
         trigger: card,
-        start: 'top bottom',
-        scrub: true,
-        toggleActions: 'play none none reverse',
-      },
-    });
-  });
-
-  imgCards.forEach((card) => {
-    gsap.from(card, {
-      scale: 1.2,
-      scrollTrigger: {
-        trigger: card,
-        start: 'top bottom',
-        scrub: true,
+        start: 'top 85%',
+        // scrub: true,
         toggleActions: 'play none none reverse',
       },
     });
