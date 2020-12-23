@@ -26,7 +26,7 @@ export function animationEnter() {
       y: -50,
     },
     { autoAlpha: 1, y: 0 },
-    '-=0.75'
+    '-=0.5'
   );
 
   return tl;
