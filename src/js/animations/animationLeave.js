@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 
-export function animationEnter(container) {
+export function animationLeave() {
   const tl = gsap.timeline();
 
   tl.to(container, {

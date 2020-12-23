@@ -10,7 +10,7 @@ export function animationEnter() {
 
   const heading = document.querySelector('.header h1');
   const burger = document.querySelector('.burger');
-  const main = document.querySelector('.main');
+  const main = document.querySelector('main');
 
   tl.fromTo(
     [heading, burger],

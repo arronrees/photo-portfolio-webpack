@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { openNav } from './openNav';
 import { closeNav } from './closeNav';
 
-export const navSlide = () => {
+export function navSlide() {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-menu');
   const navLinks = document.querySelectorAll('.nav-item');
@@ -22,4 +22,4 @@ export const navSlide = () => {
       closeNav(nav, navLinks);
     }
   });
-};
+}
