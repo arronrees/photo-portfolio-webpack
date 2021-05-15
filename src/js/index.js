@@ -18,4 +18,3 @@ import { animationLeave } from './animations/animationLeave';
 
 navSlide();
 cardEntrance();
-animationEnter();
